@@ -1,6 +1,6 @@
 github: [metadata]
 
-remote_theme: dieghernan/chulapa@sass
+remote_theme: dieghernan/chulapa
 
 
 repository: dieghernan/chulapa-sass
@@ -29,36 +29,12 @@ author:
       label: StackOverflow
 gtag_id:  UA-139034853-5
 search:
-  provider: algolia
+  provider: fusejs
   algolia_logo: true
-algolia:
-  application_id        : "KOIKA5PDQO"
-  index_name            : "chulapa"
-  search_only_api_key   : "7f1fe42bef3f03458cb3a911ebc7e0ac"
-  files_to_exclude:         #Optional
-    - _layouts/*.html
-    - _includes/*.html
-    - _pages/liquid*
-  extensions_to_index:      #Optional
-    - html
-    - md
-  searchableAttributes:     #Optional
-    - title
-    - headings
-    - unordered(content)
-    - unordered(subtitle)
-    - unordered(categories)
-    - unordered(collection)
-    - unordered(tags)
-  customRanking:            #Optional
-    - desc(include_on_search)
-    - desc(title)
-    - desc(content)
-    - desc(subtitle)
+  maxwords: 600
+
 comments:
   provider: giscus
-  cusdis_app_id: "ba6333c9-c7b1-4578-a932-e9ee3e71f120"
-  website_id: "XaFqz82GQETRJnLi7verVsyBS" 
 
 google_cse_id: 002514516175957445995:tvgnhtemtbu
 
@@ -141,7 +117,7 @@ footer:
 # C. Theme Settings
 chulapa-skin:
   highlight   : "github"
-  skin        : towards
+  skin        : sketchy
   autothemer  :  true
 
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
